@@ -1,0 +1,44 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "catalog": [
+      {
+        "id": "agarwood",
+        "name": "沉香",
+        "short": "沉",
+        "color": "#7b4b2a"
+      },
+      {
+        "id": "sandalwood",
+        "name": "檀香",
+        "short": "檀",
+        "color": "#b87a3b"
+      },
+      {
+        "id": "ambergris",
+        "name": "龙涎香",
+        "short": "龙",
+        "color": "#4d7188"
+      },
+      {
+        "id": "musk",
+        "name": "麝香",
+        "short": "麝",
+        "color": "#7e2f2f"
+      },
+      {
+        "id": "clove",
+        "name": "丁香",
+        "short": "丁",
+        "color": "#8f5aa8"
+      },
+      {
+        "id": "patchouli",
+        "name": "藿香",
+        "short": "藿",
+        "color": "#5e8b57"
+      }
+    ]
+  }
+}

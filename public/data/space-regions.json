@@ -1,0 +1,653 @@
+{
+  "code": 0,
+  "message": "success",
+  "data": {
+    "regions": [
+      {
+        "id": "hn-agarwood",
+        "spice": "agarwood",
+        "spiceName": "沉香",
+        "name": "海南",
+        "coords": [
+          110.35,
+          20.02
+        ],
+        "output": 96,
+        "regionType": "核心原产地",
+        "tagline": "海南沉香是南海香路中的核心产地。",
+        "modernDesc": "海南是沉香最具代表性的当代展示节点，兼具资源保护、文旅展示与高端香品消费。",
+        "tradeRole": "岭南道地香材",
+        "radar": [
+          96,
+          90,
+          86,
+          92,
+          82,
+          84
+        ]
+      },
+      {
+        "id": "gd-agarwood",
+        "spice": "agarwood",
+        "spiceName": "沉香",
+        "name": "广东",
+        "coords": [
+          113.27,
+          23.13
+        ],
+        "output": 93,
+        "regionType": "核心原产地",
+        "tagline": "广东沉香承接莞香传统与现代香业。",
+        "modernDesc": "广东沉香产业链完整，涵盖种植、加工、展销与香文化体验。",
+        "tradeRole": "岭南香药产区",
+        "radar": [
+          92,
+          88,
+          84,
+          90,
+          80,
+          82
+        ]
+      },
+      {
+        "id": "gx-agarwood",
+        "spice": "agarwood",
+        "spiceName": "沉香",
+        "name": "广西",
+        "coords": [
+          108.32,
+          22.82
+        ],
+        "output": 80,
+        "regionType": "传统分布区",
+        "tagline": "广西是岭南沉香带的重要补充产区。",
+        "modernDesc": "广西沉香资源延续岭南香材传统，适合作为华南沉香分布的补充展示。",
+        "tradeRole": "岭南补充产区",
+        "radar": [
+          80,
+          76,
+          70,
+          76,
+          72,
+          78
+        ]
+      },
+      {
+        "id": "yn-agarwood",
+        "spice": "agarwood",
+        "spiceName": "沉香",
+        "name": "云南",
+        "coords": [
+          102.71,
+          25.04
+        ],
+        "output": 78,
+        "regionType": "生态分布区",
+        "tagline": "云南沉香展现西南热带生态特色。",
+        "modernDesc": "云南沉香依托西双版纳等热区资源，体现西南产区与东南亚香材来源的联系。",
+        "tradeRole": "西南香药产区",
+        "radar": [
+          78,
+          68,
+          62,
+          70,
+          70,
+          82
+        ]
+      },
+      {
+        "id": "fj-agarwood",
+        "spice": "agarwood",
+        "spiceName": "沉香",
+        "name": "福建",
+        "coords": [
+          119.3,
+          26.08
+        ],
+        "output": 62,
+        "regionType": "零散分布地",
+        "tagline": "福建沉香体现东南沿海香药流通。",
+        "modernDesc": "福建虽非沉香核心高产区，但承接东南沿海的香药消费与港口流通场景。",
+        "tradeRole": "东南沿海补充",
+        "radar": [
+          62,
+          58,
+          60,
+          64,
+          64,
+          68
+        ]
+      },
+      {
+        "id": "tw-agarwood",
+        "spice": "agarwood",
+        "spiceName": "沉香",
+        "name": "台湾",
+        "coords": [
+          121.56,
+          25.04
+        ],
+        "output": 58,
+        "regionType": "零散分布地",
+        "tagline": "台湾沉香是东南海岛补充节点。",
+        "modernDesc": "台湾沉香以零散分布为主，适合呈现海岛生态与南方香材扩散。",
+        "tradeRole": "东南沿海补充",
+        "radar": [
+          58,
+          52,
+          54,
+          60,
+          60,
+          66
+        ]
+      },
+      {
+        "id": "xg-agarwood",
+        "spice": "agarwood",
+        "spiceName": "沉香",
+        "name": "香港",
+        "coords": [
+          114.17,
+          22.32
+        ],
+        "output": 55,
+        "regionType": "贸易消费地",
+        "tagline": "香港沉香重在贸易记忆与城市消费。",
+        "modernDesc": "香港连接岭南香文化、港口转运和现代香品消费，是沉香城市展示节点。",
+        "tradeRole": "岭南消费节点",
+        "radar": [
+          52,
+          54,
+          70,
+          68,
+          55,
+          56
+        ]
+      },
+      {
+        "id": "gd-sandalwood",
+        "spice": "sandalwood",
+        "spiceName": "檀香",
+        "name": "广东",
+        "coords": [
+          113.27,
+          23.13
+        ],
+        "output": 94,
+        "regionType": "现代种植区",
+        "tagline": "广东是檀香现代引种的重要产区。",
+        "modernDesc": "广东檀香种植基础较强，体现外来名贵香材在华南的本土化培育。",
+        "tradeRole": "华南引种核心",
+        "radar": [
+          90,
+          72,
+          76,
+          84,
+          76,
+          86
+        ]
+      },
+      {
+        "id": "fj-sandalwood",
+        "spice": "sandalwood",
+        "spiceName": "檀香",
+        "name": "福建",
+        "coords": [
+          119.3,
+          26.08
+        ],
+        "output": 82,
+        "regionType": "现代种植区",
+        "tagline": "福建檀香兼具引种与海贸记忆。",
+        "modernDesc": "福建檀香展示东南沿海人工栽培、香材消费和海路输入背景。",
+        "tradeRole": "东南沿海引种",
+        "radar": [
+          78,
+          68,
+          70,
+          78,
+          72,
+          80
+        ]
+      },
+      {
+        "id": "hn-sandalwood",
+        "spice": "sandalwood",
+        "spiceName": "檀香",
+        "name": "海南",
+        "coords": [
+          110.35,
+          20.02
+        ],
+        "output": 80,
+        "regionType": "现代种植区",
+        "tagline": "海南檀香体现热带引种优势。",
+        "modernDesc": "海南适合檀香等热带香材培育，展现檀香在南海热区的现代种植潜力。",
+        "tradeRole": "华南热带引种",
+        "radar": [
+          80,
+          66,
+          68,
+          76,
+          72,
+          82
+        ]
+      },
+      {
+        "id": "yn-sandalwood",
+        "spice": "sandalwood",
+        "spiceName": "檀香",
+        "name": "云南",
+        "coords": [
+          102.71,
+          25.04
+        ],
+        "output": 76,
+        "regionType": "现代种植区",
+        "tagline": "云南檀香突出西南热区种植条件。",
+        "modernDesc": "云南檀香依托热带、亚热带环境，体现西南地区的引种扩展价值。",
+        "tradeRole": "西南热区引种",
+        "radar": [
+          76,
+          62,
+          64,
+          72,
+          70,
+          80
+        ]
+      },
+      {
+        "id": "gx-sandalwood",
+        "spice": "sandalwood",
+        "spiceName": "檀香",
+        "name": "广西",
+        "coords": [
+          108.32,
+          22.82
+        ],
+        "output": 62,
+        "regionType": "零散种植区",
+        "tagline": "广西檀香是华南补充种植区。",
+        "modernDesc": "广西檀香以补充性栽培为主，呈现华南檀香分布的外围层次。",
+        "tradeRole": "华南补充种植",
+        "radar": [
+          62,
+          56,
+          58,
+          66,
+          64,
+          72
+        ]
+      },
+      {
+        "id": "gz-ambergris",
+        "spice": "ambergris",
+        "spiceName": "龙涎香",
+        "name": "广州",
+        "coords": [
+          113.26,
+          23.13
+        ],
+        "output": 94,
+        "regionType": "港口集散地",
+        "tagline": "广州是龙涎香海贸输入核心。",
+        "modernDesc": "广州承接南海航线与高端香料消费，是龙涎香进入中国叙事的重要口岸。",
+        "tradeRole": "海贸输入口岸",
+        "radar": [
+          45,
+          88,
+          96,
+          90,
+          64,
+          55
+        ]
+      },
+      {
+        "id": "qz-ambergris",
+        "spice": "ambergris",
+        "spiceName": "龙涎香",
+        "name": "泉州",
+        "coords": [
+          118.67,
+          24.87
+        ],
+        "output": 92,
+        "regionType": "港口集散地",
+        "tagline": "泉州龙涎香突出海丝港口记忆。",
+        "modernDesc": "泉州以海上丝绸之路港口为背景，展现龙涎香等舶来珍香的集散场景。",
+        "tradeRole": "海上丝路港口",
+        "radar": [
+          42,
+          86,
+          94,
+          88,
+          62,
+          55
+        ]
+      },
+      {
+        "id": "am-ambergris",
+        "spice": "ambergris",
+        "spiceName": "龙涎香",
+        "name": "澳门",
+        "coords": [
+          113.54,
+          22.2
+        ],
+        "output": 78,
+        "regionType": "贸易消费地",
+        "tagline": "澳门龙涎香体现近世转口贸易。",
+        "modernDesc": "澳门连接华南海贸和跨文化消费，适合展示龙涎香的转口与收藏属性。",
+        "tradeRole": "华南沿海输入",
+        "radar": [
+          38,
+          78,
+          86,
+          82,
+          60,
+          52
+        ]
+      },
+      {
+        "id": "xz-musk",
+        "spice": "musk",
+        "spiceName": "麝香",
+        "name": "西藏",
+        "coords": [
+          91.13,
+          29.65
+        ],
+        "output": 95,
+        "regionType": "生态资源区",
+        "tagline": "西藏麝香代表高原名贵香药。",
+        "modernDesc": "西藏麝香依托高寒山地生态，兼具药用价值、资源稀缺性和保护意义。",
+        "tradeRole": "高原名贵香药",
+        "radar": [
+          94,
+          88,
+          74,
+          84,
+          96,
+          88
+        ]
+      },
+      {
+        "id": "qh-musk",
+        "spice": "musk",
+        "spiceName": "麝香",
+        "name": "青海",
+        "coords": [
+          101.78,
+          36.62
+        ],
+        "output": 92,
+        "regionType": "生态资源区",
+        "tagline": "青海麝香展现高原生态资源。",
+        "modernDesc": "青海麝香体现青藏高原动物性香药资源，也提示珍稀资源保护的重要性。",
+        "tradeRole": "高寒山地香药",
+        "radar": [
+          90,
+          84,
+          70,
+          80,
+          95,
+          90
+        ]
+      },
+      {
+        "id": "sc-musk",
+        "spice": "musk",
+        "spiceName": "麝香",
+        "name": "四川",
+        "coords": [
+          104.07,
+          30.67
+        ],
+        "output": 90,
+        "regionType": "传统高山产区",
+        "tagline": "四川麝香连接山地资源与药材市场。",
+        "modernDesc": "四川麝香依托西南山地生态，兼具传统药用、区域流通和保护价值。",
+        "tradeRole": "西南药材流通",
+        "radar": [
+          88,
+          82,
+          76,
+          78,
+          94,
+          84
+        ]
+      },
+      {
+        "id": "gs-musk",
+        "spice": "musk",
+        "spiceName": "麝香",
+        "name": "甘肃",
+        "coords": [
+          103.83,
+          36.06
+        ],
+        "output": 82,
+        "regionType": "资源分布区",
+        "tagline": "甘肃麝香承接西北山地药香资源。",
+        "modernDesc": "甘肃麝香展现西北山地资源特色，也连接高原药材与内陆市场。",
+        "tradeRole": "西北山地香药",
+        "radar": [
+          78,
+          72,
+          66,
+          70,
+          88,
+          78
+        ]
+      },
+      {
+        "id": "yn-musk",
+        "spice": "musk",
+        "spiceName": "麝香",
+        "name": "云南",
+        "coords": [
+          102.71,
+          25.04
+        ],
+        "output": 80,
+        "regionType": "资源分布区",
+        "tagline": "云南麝香体现西南山地多样性。",
+        "modernDesc": "云南麝香依托复杂山地生态，展现动物性香药在西南地区的分布价值。",
+        "tradeRole": "西南山地香药",
+        "radar": [
+          80,
+          68,
+          64,
+          72,
+          86,
+          80
+        ]
+      },
+      {
+        "id": "xj-musk",
+        "spice": "musk",
+        "spiceName": "麝香",
+        "name": "新疆",
+        "coords": [
+          87.62,
+          43.82
+        ],
+        "output": 78,
+        "regionType": "资源分布区",
+        "tagline": "新疆麝香连接西北生态与丝路通道。",
+        "modernDesc": "新疆麝香展现西北山地资源特色，并带有边地药材流通背景。",
+        "tradeRole": "西北山地香药",
+        "radar": [
+          76,
+          66,
+          62,
+          68,
+          84,
+          78
+        ]
+      },
+      {
+        "id": "sx-musk",
+        "spice": "musk",
+        "spiceName": "麝香",
+        "name": "陕西",
+        "coords": [
+          108.94,
+          34.34
+        ],
+        "output": 76,
+        "regionType": "资源分布区",
+        "tagline": "陕西麝香延续秦岭贡麝线索。",
+        "modernDesc": "陕西麝香依托秦岭山地生态，连接地方药材资源与历史贡麝记忆。",
+        "tradeRole": "商州贡麝线索",
+        "radar": [
+          72,
+          78,
+          66,
+          72,
+          84,
+          76
+        ]
+      },
+      {
+        "id": "gz-clove",
+        "spice": "clove",
+        "spiceName": "丁香",
+        "name": "广州",
+        "coords": [
+          113.26,
+          23.13
+        ],
+        "output": 84,
+        "regionType": "港口集散地",
+        "tagline": "广州丁香代表海上辛香料输入。",
+        "modernDesc": "广州是丁香等进口辛香料的重要展示口岸，连接调味、药用与香方消费。",
+        "tradeRole": "海贸输入口岸",
+        "radar": [
+          30,
+          78,
+          92,
+          76,
+          82,
+          48
+        ]
+      },
+      {
+        "id": "qz-clove",
+        "spice": "clove",
+        "spiceName": "丁香",
+        "name": "泉州",
+        "coords": [
+          118.67,
+          24.87
+        ],
+        "output": 82,
+        "regionType": "港口集散地",
+        "tagline": "泉州丁香体现海丝香料贸易。",
+        "modernDesc": "泉州承载东南亚辛香料进入中国的港口记忆，适合展示丁香的流通属性。",
+        "tradeRole": "海上丝路港口",
+        "radar": [
+          30,
+          80,
+          90,
+          74,
+          82,
+          48
+        ]
+      },
+      {
+        "id": "zq-patchouli",
+        "spice": "patchouli",
+        "spiceName": "藿香",
+        "name": "肇庆",
+        "coords": [
+          112.46,
+          23.05
+        ],
+        "output": 96,
+        "regionType": "道地产区",
+        "tagline": "肇庆藿香是广藿香道地代表。",
+        "modernDesc": "肇庆藿香体现广藿香道地药材价值，兼具规模栽培和药用原料供应。",
+        "tradeRole": "广藿香核心产区",
+        "radar": [
+          96,
+          86,
+          74,
+          84,
+          94,
+          88
+        ]
+      },
+      {
+        "id": "sp-patchouli",
+        "spice": "patchouli",
+        "spiceName": "藿香",
+        "name": "石牌",
+        "coords": [
+          113.35,
+          23.13
+        ],
+        "output": 93,
+        "regionType": "道地产区",
+        "tagline": "石牌藿香是广藿香品质标识。",
+        "modernDesc": "石牌藿香以优质广藿香著称，连接城市近郊栽培记忆与传统药香应用。",
+        "tradeRole": "广藿香代表产区",
+        "radar": [
+          92,
+          84,
+          76,
+          86,
+          92,
+          86
+        ]
+      },
+      {
+        "id": "zj-patchouli",
+        "spice": "patchouli",
+        "spiceName": "藿香",
+        "name": "湛江",
+        "coords": [
+          110.36,
+          21.27
+        ],
+        "output": 82,
+        "regionType": "代表性产区",
+        "tagline": "湛江藿香代表华南沿海产区。",
+        "modernDesc": "湛江藿香依托温暖湿润环境，体现华南沿海广藿香的稳定供给。",
+        "tradeRole": "华南香药产区",
+        "radar": [
+          82,
+          74,
+          66,
+          76,
+          88,
+          80
+        ]
+      },
+      {
+        "id": "hn-patchouli",
+        "spice": "patchouli",
+        "spiceName": "藿香",
+        "name": "海南",
+        "coords": [
+          110.39,
+          18.8
+        ],
+        "output": 78,
+        "regionType": "代表性产区",
+        "tagline": "海南藿香展现热带药香资源。",
+        "modernDesc": "海南藿香代表南方热带补充产区，兼具海岛气候和香药资源特色。",
+        "tradeRole": "华南热带香药",
+        "radar": [
+          78,
+          70,
+          62,
+          72,
+          86,
+          82
+        ]
+      }
+    ],
+    "total": 28
+  }
+}
