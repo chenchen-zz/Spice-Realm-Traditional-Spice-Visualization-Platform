@@ -141,8 +141,7 @@ VITE_AMAP_SECURITY_CODE=你的securityJsCode
 
 #### 本地开发注意事项
 
-高德控制台可能会把 `localhost` 和 `127.0.0.1` 判定为不规范域名，因此不要将
-它们填写到域名白名单中。
+高德控制台可能会把 `localhost` 和 `127.0.0.1` 判定为不规范域名，因此不要将它们填写到域名白名单中。
 
 本地执行 `npm run dev` 时，如果地图无法加载并提示 `INVALID_USER_DOMAIN`：
 
