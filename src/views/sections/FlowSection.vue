@@ -33,7 +33,7 @@
         <div class="panel-head">
           <div>
             <p class="panel-title">香料流转桑基图</p>
-            <p class="panel-subtitle">按香料筛选后展示三级流转，条带宽度映射流量占比。</p>
+            <p class="panel-subtitle">前半段按香料区分颜色，汇入同一用途的条带使用统一用途色。</p>
           </div>
           <div class="panel-badge">ECharts Sankey</div>
         </div>
@@ -51,22 +51,11 @@
             </span>
           </div>
           <div class="legend-row">
-            <span class="legend-title">路线</span>
-            <span
-              v-for="route in routeLegend"
-              :key="route.name"
-              class="chip route-chip"
-              :style="{ '--chip-color': route.color }"
-            >
-              {{ route.name }}
-            </span>
-          </div>
-          <div class="legend-row">
             <span class="legend-title">用途</span>
             <span
               v-for="use in useLegend"
               :key="use.name"
-              class="chip use-chip"
+              class="chip"
               :style="{ '--chip-color': use.color }"
             >
               {{ use.name }}
@@ -147,39 +136,30 @@ const chartRef = ref(null)
 const chartFont = "'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', system-ui, sans-serif"
 
 const spiceCatalog = [
-  { id: 'agarwood', name: '沉香', color: '#6f4a2f' },
-  { id: 'sandalwood', name: '檀香', color: '#b17437' },
-  { id: 'ambergris', name: '龙涎香', color: '#436f83' },
-  { id: 'musk', name: '麝香', color: '#83363a' },
-  { id: 'clove', name: '丁香', color: '#7d5694' },
-  { id: 'patchouli', name: '藿香', color: '#5d8550' },
+  { id: 'agarwood', name: '沉香', color: '#8c4f3d' },
+  { id: 'sandalwood', name: '檀香', color: '#c17b32' },
+  { id: 'ambergris', name: '龙涎香', color: '#367b8d' },
+  { id: 'musk', name: '麝香', color: '#9a4052' },
+  { id: 'clove', name: '丁香', color: '#765a9b' },
+  { id: 'patchouli', name: '藿香', color: '#54845a' },
 ]
 
-const routePalette = {
-  海上丝绸之路: '#2f7f86',
-  陆上丝绸之路: '#b27a34',
-  '殖民贸易/海上直航': '#7f5ca8',
-  国内贸易: '#5f7c4a',
-}
+const routeColor = '#617c78'
 
 const usePalette = {
-  外交礼品: '#c28a38',
-  '熏香（宫廷）': '#9a4d3f',
-  药用: '#4f866f',
-  '熏香（宗教）': '#765a98',
-  '熏香（民间）': '#8a6b45',
-  '饮食（调味/防腐）': '#c46f3a',
-  牙科麻醉: '#4f7897',
-  防腐剂: '#697b78',
-  化妆品原料: '#b6667a',
-}
-
-function getRouteColor(route) {
-  return routePalette[route] || '#8d735d'
+  外交礼品: '#c49335',
+  '熏香（宫廷）': '#a94f43',
+  药用: '#47866b',
+  '熏香（宗教）': '#785d9a',
+  '熏香（民间）': '#9a7045',
+  '饮食（调味/防腐）': '#d17336',
+  牙科麻醉: '#4d7fa0',
+  防腐剂: '#687d7c',
+  化妆品原料: '#b65f7b',
 }
 
 function getUseColor(use) {
-  return usePalette[use] || '#9b7657'
+  return usePalette[use] || '#8f705f'
 }
 
 const flowDataset = ref({})
@@ -191,13 +171,6 @@ async function loadFlowData() {
 }
 
 const activeSpice = computed(() => buildCombinedFlow())
-
-const routeLegend = computed(() =>
-  compactList(activeSpice.value.routes).map((route) => ({
-    name: route,
-    color: getRouteColor(route),
-  })),
-)
 
 const useLegend = computed(() =>
   compactList(activeSpice.value.uses).map((use) => ({
@@ -330,7 +303,7 @@ function buildCombinedFlow() {
         description: `${sourceLabel} 是 ${spice.name} 的源头产地或关键集散地。`,
         lineStyle: {
           color: spice.color,
-          opacity: 0.58,
+          opacity: 0.52,
           curveness: 0.5,
         },
       })
@@ -353,8 +326,8 @@ function buildCombinedFlow() {
           spiceNames: [spice.name],
           kind: 'source-route',
           lineStyle: {
-            color: getRouteColor(link.target),
-            opacity: 0.58,
+            color: spice.color,
+            opacity: 0.48,
             curveness: 0.5,
           },
         })
@@ -373,7 +346,7 @@ function buildCombinedFlow() {
         description: `${link.source} → ${link.target}，合计流量指数为 ${link.value}。`,
         lineStyle: {
           color: getUseColor(link.target),
-          opacity: 0.64,
+          opacity: 0.5,
           curveness: 0.5,
         },
       })
@@ -387,7 +360,7 @@ function buildCombinedFlow() {
       depth: 2,
       kind: 'route',
       itemStyle: {
-        color: getRouteColor(route),
+        color: routeColor,
         borderColor: 'rgba(255, 250, 243, 0.96)',
         borderWidth: 1.5,
       },
@@ -556,7 +529,7 @@ function renderChart() {
         },
         lineStyle: {
           color: 'source',
-          opacity: 0.58,
+          opacity: 0.48,
           curveness: 0.5,
         },
         itemStyle: {
@@ -900,14 +873,6 @@ h1 {
   border-radius: 50%;
   background: var(--chip-color);
   box-shadow: 0 0 0 3px color-mix(in srgb, var(--chip-color) 16%, transparent);
-}
-
-.route-chip {
-  background: color-mix(in srgb, var(--chip-color) 12%, white);
-}
-
-.use-chip {
-  background: color-mix(in srgb, var(--chip-color) 14%, white);
 }
 
 .chart-shell {
